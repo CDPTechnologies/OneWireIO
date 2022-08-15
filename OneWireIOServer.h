@@ -20,7 +20,6 @@ public:
   void Create(const char* fullName) override;
   void CreateModel() override;
   void Configure(const char* componentXML) override;
-  std::string GetNodeTypeName() const override;
   void FillNodeChildren(CDP::StudioAPI::NodeStream &serializer) const override;
   bool IsCommProblem() override;
   void Activate() override;

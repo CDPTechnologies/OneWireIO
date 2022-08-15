@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<Model Name="OneWireIO.OneWireIOServer" Version="2.0">
+<?xml version="1.0" encoding="utf-8"?>
+<Model Name="OneWireIO.OneWireIOServer">
   <ModelTypeClass>C++</ModelTypeClass>
   <BaseModel>IOServer</BaseModel>
   <Priority>normal</Priority>

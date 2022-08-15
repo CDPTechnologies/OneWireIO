@@ -1,4 +1,4 @@
-CDPVERSION = 4.4
+CDPVERSION = 4.10
 TYPE = library
 PROJECTNAME = OneWireIO
 
