@@ -34,11 +34,6 @@ void OneWireIOServer::Configure(const char* componentXML)
   m_periodMs = ts * 1000;
 }
 
-std::string OneWireIOServer::GetNodeTypeName() const
-{
-  return "OneWireIO.OneWireIOServer";
-}
-
 void OneWireIOServer::FillNodeChildren(CDP::StudioAPI::NodeStream &serializer) const
 {
   IOServer::FillNodeChildren(serializer);
@@ -49,7 +44,7 @@ void OneWireIOServer::FillNodeChildren(CDP::StudioAPI::NodeStream &serializer) c
 void OneWireIOServer::Activate()
 {
   IOServer::Activate();
-  Start(CDPTHREAD_PRIORITY_ABOVE_NORMAL, m_shortName);
+  Start(CDPTHREAD_PRIORITY_ABOVE_NORMAL, ShortName());
 }
 
 void OneWireIOServer::Suspend()
